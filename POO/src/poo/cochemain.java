@@ -2,7 +2,7 @@ package poo;
 
 public class cochemain {
 public static void main(String[] args) {
-	
+	/*
 	coche Renault = new coche();
 	//System.out.println("mi coche tiene " + Renault.rueda + " ruendas " + " ,el coche tiene m de largo "+Renault.largo + " ti");
 	
@@ -21,11 +21,27 @@ public static void main(String[] args) {
      }
      Celular celular = new Celular();
      System.out.println(celular.modelo+celular.almacenamiento);
-     //coche
-     System.out.println(Renault.dime_motor());
-     coche Subaru = new coche();
-     Subaru.establece_color();
-     System.out.println(Subaru.dime_color());
+     //coche*/
+     //System.out.println(Renault.dime_motor());
+     
+	coche Subaru = new coche();
+     Subaru.establece_color("Verde");
+     System.out.println(Subaru.dime_datos_generales());
+    Subaru.configura_asientos("si");
+    System.out.println(Subaru.dime_asientos());
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     /*
+     
      // automovil 
      automovil auto = new automovil();
      auto.SetMarca("SUBARU");
@@ -58,12 +74,13 @@ public static void main(String[] args) {
     //
     producto productov1 = new producto();
     productov1.establece_precio();
-    productov1.establece_stock();
+    int stock=  productov1.dime_stock();
     productov1.establece_nombre();
     System.out.println("4 "+productov1.dime_nombre());
     System.out.println("4 "+productov1.dime_precio());
     System.out.println("4 "+productov1.dime_stock());
-    //
+    System.out.println(productov1.setstock(stock));
+    //*/
 }
 
 }

@@ -8,7 +8,7 @@ public class producto {
  public producto() {
 	 nombre = null;
 	 precio = 20.2;
-	 stock = 3;
+	 stock = -2;
 	 
  }
  public void establece_nombre (){
@@ -24,12 +24,14 @@ public class producto {
  public double dime_precio() {
 	 return precio;
  }
- public void setstock(int nuevoStock) {
-	 if (nuevoStock >=0) {
-		 stock = nuevoStock;
+ public String setstock(int stock) {
+	 if (stock >=0) {
+		return "el stock es" + stock ;
 	 }else {
 		 System.out.println("no puede ser negativo");
 	 }
+	return null;
+
  }
  
  
