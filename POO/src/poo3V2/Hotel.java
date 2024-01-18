@@ -11,11 +11,18 @@ public class Hotel {
     }
 
     private void inicializarHabitaciones(int numHabitaciones) {
+    	String tipo;
         for (int i = 1; i <= numHabitaciones; i++) {
-            habitaciones.put(i, new Habitacion(i, "simple")); //agregar datos 
+        	if (i%3==0) {
+            tipo = "simple";
+        }else if(i%2==0) {
+        	 tipo = "doble";
+        }else {
+        	tipo = "suite";
         }
+        	habitaciones.put(i, new Habitacion(i, tipo));
     }
-
+    }
     public void mostrarDisponibilidad() {
         for (Habitacion habitacion : habitaciones.values()) {
             String estado = habitacion.isOcupada() ? "Ocupada" : "Disponible";
