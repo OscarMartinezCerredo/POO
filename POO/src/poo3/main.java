@@ -10,35 +10,35 @@ public class main {
    Scanner scanner = new Scanner(System.in);
 
   
-   Horas h = new Horas(20,10);
+   Horas h = new Horas(20,10); // valores preterminado que ahora da un poco igual 
    // hora de a hora establecer
-    h.establecer_horas(scanner.nextInt());
-    h.establecer_minutos(scanner.nextInt());
-    h.establecerHoras_minutos(h.dimehoras(), h.dimeminutos()); //establecer cosas 
+    h.establecer_horas(scanner.nextInt());  // valor de hora por separado  que pasa a el objeto hora 
+    h.establecer_minutos(scanner.nextInt()); // valor de minutos por separado 
+    h.establecerHoras_minutos(h.dimehoras(), h.dimeminutos()); //establecer cosas  los junta y los establece como horas y minutos 
     
     
     //decir cosas 
-   System.out.println(h.obtenTiempo());
-    Reloj.establece_hora(h.obtenTiempo());
-   System.out.println(Reloj.dimeh_hora()); 
+   System.out.println(h.obtenTiempo()); // me dice la hora tengo que mejorar como se muestra ya que se muestra como 4 digitos 
+    Reloj.establece_hora(h.obtenTiempo()); // estable el la horea en el que lo puesto
+   System.out.println(Reloj.dimeh_hora());  // me dice la hora 
    // la alarma establecer 
-   h.establecer_horas(scanner.nextInt());/// establecer cosas 
-   h.establecer_minutos(scanner.nextInt());
+   h.establecer_horas(scanner.nextInt());/// establecer cosas las horas por separado 
+   h.establecer_minutos(scanner.nextInt()); // me establece los minutos 
   
-  h.establecerHoras_minutos(h.dimehoras(), h.dimeminutos());//decir cosas 
-  Reloj.establece_alarma(h.obtenTiempo());
-  System.out.println(Reloj.dimeh_alarma());
+  h.establecerHoras_minutos(h.dimehoras(), h.dimeminutos());// une horas y minutos 
+  Reloj.establece_alarma(h.obtenTiempo()); // establece el tiempo junto como alarma 
+  System.out.println(Reloj.dimeh_alarma()); // me dice la hora de la alarma 
   // alarma activada ? 
-  System.out.println("quieres activar la alarma");
-  Reloj.activar_alarma(scanner.next());
-  System.out.println(Reloj.dimesiacti());
+  System.out.println("quieres activar la alarma"); //pregunta 
+  Reloj.activar_alarma(scanner.next());  // mete dato 
+  System.out.println(Reloj.dimesiacti()); // establece dato de alarma activa o no 
   // alarma sonando 
    
-   System.out.println(Reloj.dimeh_alarma());
-   System.out.println(Reloj.dimeh_hora());
+   System.out.println(Reloj.dimeh_alarma()); //me dice alarma 
+   System.out.println(Reloj.dimeh_hora()); // dice hora 
   
-   Reloj.com_alarma(Reloj.dimeh_alarma(), Reloj.dimeh_hora());
-   System.out.println(Reloj.encen());
+   Reloj.com_alarma(Reloj.dimeh_alarma(), Reloj.dimeh_hora()); // establece hora comparar alarma y hora
+   System.out.println(Reloj.encen()); // decir cosas 
    
    
    
