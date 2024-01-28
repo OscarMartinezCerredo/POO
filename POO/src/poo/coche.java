@@ -15,8 +15,14 @@ public coche(){
 	peso =1900;
 	color = null;
 	asientos_cuero = true;
-	climatizador = true ;
+    climatizador = true;
 	peso_plataforma = 200;
+}
+public boolean isClimatizador() {
+	return climatizador;
+}
+public void setClimatizador(boolean climatizador) {
+	this.climatizador = climatizador;
 }
 public String dime_motor() {
 return "El motor del coche tiene " + motor + " caballos de potencia";

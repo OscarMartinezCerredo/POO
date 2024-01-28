@@ -13,7 +13,7 @@ public class ClassReceta {
 	public void agregarIngredientes(String ingrediente) {
 		listaIngredientes.add(ingrediente); //añade ingredientes a la lista
 	}
-	public void eliminarIngradientes(String ingrediente) {
+	public void eliminarIngredientes(String ingrediente) {
 		listaIngredientes.remove(ingrediente); //quita ingredientes a la lista 
 	}
 	public void agregarPasos(String pasos) {
